@@ -1,5 +1,5 @@
 // Get all the information from Bilal's API
-async function getItems() {
+const getItems = async() => {
 	try {
 		let response = await fetch("http://localhost:3000/api/products");
 		return await response.json();
