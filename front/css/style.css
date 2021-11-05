@@ -136,11 +136,15 @@ main {
 	text-decoration: none;
 	color: unset;
 }
-.items a:hover article {
+.items a article:hover {
 	box-shadow: rgba(42, 18, 206, 0.9) 0 0 22px 6px;
 	transform: scale(105%);
 	transition: all 0.5s;
 }
+.items a article {
+	transition:  all 0.7s;
+}
+
 
 .items article {
 	background-color: var(--secondary-color);
