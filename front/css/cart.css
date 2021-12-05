@@ -24,10 +24,19 @@ h2 {
 }
 .cart__item__img {
 	width: 25%;
+	
+}
+.cart__item__img :hover {
+	transform: scale(105%);
+	transition: all 0.5s;
+	box-shadow: #da3232 0 0 8px 4px;
+	
+	
 }
 .cart__item__img img {
 	width: 100%;
 	border-radius: 25px;
+	transition: all 0.5s;
 }
 .cart__item__content {
 	width: 50%;
@@ -95,11 +104,14 @@ h2 {
 }
 .cart__order__form {
 	width: 50%;
+	
 }
+
 .cart__order__form__question {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 25px;
+	
 }
 .cart__order__form__question input {
 	border-radius: 13px;
@@ -109,6 +121,7 @@ h2 {
 }
 .cart__order__form__question input:focus {
 	outline: none;
+	box-shadow: #bae9e9 0 0 5px 3px;
 }
 .cart__order__form__question p {
 	margin: 0;
@@ -152,10 +165,11 @@ h2 {
 		align-items: center;
 	}
 	.cart__item__img {
-		width: 50%;
+		width: 70%;
 	}
 	.cart__item__content {
 		width: 90%;
+		
 	}
 	.cart__item__content__titlePrice {
 		margin-bottom: 20px;
@@ -168,5 +182,13 @@ h2 {
 	}
 	.cart__order__form {
 		width: 75%;
+	}
+}
+@keyframes skew {
+	0% {
+		transform: rotate(0);
+	} 
+	100% {
+		transform: rotate(360deg);
 	}
 }
