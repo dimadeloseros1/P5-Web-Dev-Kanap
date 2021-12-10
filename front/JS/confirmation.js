@@ -4,9 +4,9 @@ const getId = () => {
   console.log(urlConfirmation);
   const getConfirmationId = urlConfirmation.searchParams.get("id");
   console.log(getConfirmationId);
-  document.getElementById("orderId").innerHTML = getConfirmationId;
+  document.getElementById("orderId").textContent = getConfirmationId;
 };
 getId();
 
-localStorage.removeItem("products");
+localStorage.removeItem("productt");
 localStorage.removeItem("orderId");
